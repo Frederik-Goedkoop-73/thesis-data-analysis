@@ -5,7 +5,7 @@
 
 This repository contains the analysis workflows used in my master’s thesis, covering both:
 
-1. **Fitbit data analysis** – conducted in R (see `R_scripts` folder) with corresponding outputs stored in the `outputs` folder.
+1. **Fitbit data analysis** – conducted in R (see `R scripts and outputs` folder).
 2. **Survey data analysis** – processed in Excel (see `Excel` folder).
 
 The purpose of this repository is to provide **transparency in methods** and allow others to review the analytical process.
