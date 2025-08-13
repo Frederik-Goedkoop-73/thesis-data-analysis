@@ -1,0 +1,22 @@
+Analysis,Test Used,Result,Interpretation
+Sedentary,,,
+Outlier(s),IQR & Z-score,me7,"mc5 removed, me7 retained"
+Pre vs Post,Wilcoxon signed-rank test,p = 0.6523,No significant association
+Group comparison,Wilcoxon rank-sum test,p = 0.8633,No significant association
+Effect size,Wilcoxon effect size,r = 0.052,Small effect
+Engagement correlation,Spearman correlation,"p = 0.076*, ρ = -0.633",Possible negative association
+Lightly Active,,,
+Pre vs Post,Wilcoxon signed-rank test,p = 0.7344,No significant association
+Group comparison,Wilcoxon rank-sum test,p = 0.5457,No significant association
+Effect size,Wilcoxon effect size,r = 0.156,Small effect
+Engagement correlation,Spearman correlation,"p = 0.912, ρ = -0.05",Negligible association
+Moderately Active,,,
+Pre vs Post,Wilcoxon signed-rank test,p = 0.7344,No significant association
+Group comparison,Wilcoxon rank-sum test,p = 0.3401,No significant association
+Effect size,Wilcoxon effect size,r = 0.239,Small effect
+Engagement correlation,Spearman correlation,"p = 0.00827***, ρ = 0.833",Significant positive association
+Very Active,,,
+Pre vs Post,Wilcoxon signed-rank test,p = 0.03906**,Significant positive association
+Group comparison,Wilcoxon rank-sum test,p = 0.2224,No significant association
+Effect size,Wilcoxon effect size,r = 0.302,Moderate effect
+Engagement correlation,Spearman correlation,"p = 0.076*, ρ = 0.633",Possible positive association
