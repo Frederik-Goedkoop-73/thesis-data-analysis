@@ -10,13 +10,12 @@ This repository contains the analysis workflows used in my master’s thesis, co
 
 The purpose of this repository is to provide **transparency in methods** and allow others to review the analytical process.
 
----
 
 ## Data Privacy
 
 All raw data, including fully anonymised survey responses, has been **intentionally excluded** from this repository to comply with GDPR and ensure participant privacy. Only aggregated and processed outputs are included.
 
----
+
 
 ## Repository Structure
 
@@ -31,7 +30,7 @@ All raw data, including fully anonymised survey responses, has been **intentiona
   * `Survey Data Analysis.xlsx` – Processing and aggregation of survey results.
   * `Tables Data Analysis Overview.xlsx` – Final formatted tables exactly as presented in the thesis. This document also contains the **citations for all R packages used**.
 
----
+
 
 ## Notes
 
