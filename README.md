@@ -36,4 +36,5 @@ All raw data, including fully anonymised survey responses, has been **intentiona
 
 * All code is provided under a permissive license (MIT) to allow reuse, modification, and sharing.
 * Data is excluded to protect privacy, but the full analytical workflow remains reproducible with equivalent structured data.
+* The viridis (cividis option) color palette was used. Despite it not being the most attractive palette, this one allows for clear color distinction for any type of color blindness (and black-white printing). 
 
