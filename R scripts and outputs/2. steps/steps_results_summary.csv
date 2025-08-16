@@ -1,34 +1,5 @@
 Analysis,Test Used,Result,Interpretation
-Sedentary,,,
-Normality (combined),Shapiro-Wilk,p = 0.8153,Data are normally distributed
-Normality (gamified),Shapiro-Wilk,p = 0.7933,Data are normally distributed
-Normality (control),Shapiro-Wilk,p = 0.1809,Data are normally distributed
-Outlier(s),IQR & Z-score,"mc5, me7",Flagged
-Pre vs Post,Wilcoxon signed-rank test,p = 0.6523,Possible trend of improvement
-Group comparison,Wilcoxon rank-sum test,p = 0.6038,Possible trend of improvement
-Effect size,Wilcoxon effect size,r = 0.131,Small effect
-Engagement correlation,Spearman correlation,"p = 0.076*, ρ = -0.633",Possible negative association
-Lightly Active,,,
-Normality (combined),Shapiro-Wilk,p = 0.7883,Data are normally distributed
-Normality (gamified),Shapiro-Wilk,p = 0.9503,Data are normally distributed
-Normality (control),Shapiro-Wilk,p = 0.02155**,Data are not normally distributed
-Pre vs Post,Wilcoxon signed-rank test,p = 0.7344,Possible trend of improvement
-Group comparison,Wilcoxon rank-sum test,p = 0.8421,Possible trend of improvement
-Effect size,Wilcoxon effect size,r = 0.0562,Small effect
-Engagement correlation,Spearman correlation,"p = 0.912, ρ = -0.05",Negligible association
-Moderately Active,,,
-Normality (combined),Shapiro-Wilk,p = 0.147,Data are normally distributed
-Normality (gamified),Shapiro-Wilk,p = 0.1309,Data are normally distributed
-Normality (control),Shapiro-Wilk,p = 0.007279***,Data are not normally distributed
-Pre vs Post,Wilcoxon signed-rank test,p = 0.7344,Possible trend of improvement
-Group comparison,Wilcoxon rank-sum test,p = 0.211,Possible trend of improvement
-Effect size,Wilcoxon effect size,r = 0.3,Small effect
-Engagement correlation,Spearman correlation,"p = 0.00827***, ρ = 0.833",Strong positive association
-Very Active,,,
-Normality (combined),Shapiro-Wilk,p = 0.1151,Data are normally distributed
-Normality (gamified),Shapiro-Wilk,p = 0.3337,Data are normally distributed
-Normality (control),Shapiro-Wilk,p = 0.09991*,Data are borderline normally distributed
-Pre vs Post,Wilcoxon signed-rank test,p = 0.03906**,Possible trend of improvement
-Group comparison,Wilcoxon rank-sum test,p = 0.1823,Possible trend of improvement
-Effect size,Wilcoxon effect size,r = 0.318,Moderate effect
-Engagement correlation,Spearman correlation,"p = 0.076*, ρ = 0.633",Possible positive association
+Outlier(s),IQR & Z-score,"me2, me7",Retained
+Pre vs Post,Wilcoxon signed-rank test,"p = 0.07422*, r = 0.612",Possible positive association
+Group comparison,Wilcoxon rank-sum test,p = 0.1564 r = 0.337,No significant association
+Engagement correlation,Spearman correlation,"p = 0.00131***, ρ = 0.917",Significant positive association

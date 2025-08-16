@@ -4,6 +4,7 @@ library(ggplot2)
 library(ggthemes)
 library(lubridate)
 library(rstatix)
+library(tidyr)
 
 
 # 1. Import and clean data ------------------------------------------------
@@ -39,87 +40,87 @@ clean <- function(name, may_data, june_data) {
 # Create table for each participant using the new clean() function
 # Experimental group
 me1_steps_data <- clean("me1", 
-                        "Participant Fitbit data/me1/Physical Activity_GoogleData/steps_2025-05-04.csv",
-                        "Participant Fitbit data/me1/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/me1/Physical Activity_GoogleData/steps_2025-05-04.csv",
+                        "../../Participant Fitbit data/me1/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 me2_steps_data <- clean("me2", 
-                        "Participant Fitbit data/me2/Physical Activity_GoogleData/steps_2025-05-04.csv", 
-                        "Participant Fitbit data/me2/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/me2/Physical Activity_GoogleData/steps_2025-05-04.csv", 
+                        "../../Participant Fitbit data/me2/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 me3_steps_data <- clean("me3", 
-                        "Participant Fitbit data/me3/Physical Activity_GoogleData/steps_2025-05-03.csv", 
-                        "Participant Fitbit data/me3/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/me3/Physical Activity_GoogleData/steps_2025-05-03.csv", 
+                        "../../Participant Fitbit data/me3/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 me4_steps_data <- clean("me4", 
-                        "Participant Fitbit data/me4/Physical Activity_GoogleData/steps_2025-05-06.csv", 
-                        "Participant Fitbit data/me4/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/me4/Physical Activity_GoogleData/steps_2025-05-06.csv", 
+                        "../../Participant Fitbit data/me4/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 me5_steps_data <- clean("me5", 
-                        "Participant Fitbit data/me5/Physical Activity_GoogleData/steps_2025-05-01.csv", 
-                        "Participant Fitbit data/me5/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/me5/Physical Activity_GoogleData/steps_2025-05-01.csv", 
+                        "../../Participant Fitbit data/me5/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 me6_steps_data <- clean("me6", 
-                        "Participant Fitbit data/me6/Physical Activity_GoogleData/steps_2025-05-03.csv", 
-                        "Participant Fitbit data/me6/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/me6/Physical Activity_GoogleData/steps_2025-05-03.csv", 
+                        "../../Participant Fitbit data/me6/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 me7_steps_data <- clean("me7", 
-                        "Participant Fitbit data/me7/Physical Activity_GoogleData/steps_2025-05-04.csv",
-                        "Participant Fitbit data/me7/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/me7/Physical Activity_GoogleData/steps_2025-05-04.csv",
+                        "../../Participant Fitbit data/me7/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 fe1_steps_data <- clean("fe1", 
-                        "Participant Fitbit data/fe1/Physical Activity_GoogleData/steps_2025-05-04.csv", 
-                        "Participant Fitbit data/fe1/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/fe1/Physical Activity_GoogleData/steps_2025-05-04.csv", 
+                        "../../Participant Fitbit data/fe1/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 fe2_steps_data <- clean("fe2", 
-                        "Participant Fitbit data/fe2/Physical Activity_GoogleData/steps_2025-05-06.csv", 
-                        "Participant Fitbit data/fe2/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/fe2/Physical Activity_GoogleData/steps_2025-05-06.csv", 
+                        "../../Participant Fitbit data/fe2/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 # Omit due to low engagement
 # fe3_steps_data <- clean("fe3", 
-#                         "Participant Fitbit data/fe3/Physical Activity_GoogleData/steps_2025-05-07.csv", 
-#                         "Participant Fitbit data/fe3/Physical Activity_GoogleData/steps_2025-06-01.csv"
+#                         "../../Participant Fitbit data/fe3/Physical Activity_GoogleData/steps_2025-05-07.csv", 
+#                         "../../Participant Fitbit data/fe3/Physical Activity_GoogleData/steps_2025-06-01.csv"
 # )
 
 # Control group
 mc1_steps_data <- clean("mc1",
-                        "Participant Fitbit data/mc1/steps_2025-05-05.csv", 
-                        "Participant Fitbit data/mc1/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc1/steps_2025-05-05.csv", 
+                        "../../Participant Fitbit data/mc1/steps_2025-06-01.csv"
 )
 mc2_steps_data <- clean("mc2", 
-                        "Participant Fitbit data/mc2/Physical Activity_GoogleData/steps_2025-05-01.csv", 
-                        "Participant Fitbit data/mc2/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc2/Physical Activity_GoogleData/steps_2025-05-01.csv", 
+                        "../../Participant Fitbit data/mc2/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 mc3_steps_data <- clean("mc3", 
-                        "Participant Fitbit data/mc3/Physical Activity_GoogleData/steps_2025-05-06.csv", 
-                        "Participant Fitbit data/mc3/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc3/Physical Activity_GoogleData/steps_2025-05-06.csv", 
+                        "../../Participant Fitbit data/mc3/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 mc4_steps_data <- clean("mc4", 
-                        "Participant Fitbit data/mc4/Physical Activity_GoogleData/steps_2025-05-06.csv", 
-                        "Participant Fitbit data/mc4/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc4/Physical Activity_GoogleData/steps_2025-05-06.csv", 
+                        "../../Participant Fitbit data/mc4/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 mc5_steps_data <- clean("mc5", 
-                        "Participant Fitbit data/mc5/Physical Activity_GoogleData/steps_2025-05-08.csv", 
-                        "Participant Fitbit data/mc5/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc5/Physical Activity_GoogleData/steps_2025-05-08.csv", 
+                        "../../Participant Fitbit data/mc5/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 mc6_steps_data <- clean("mc6", 
-                        "Participant Fitbit data/mc6/Physical Activity_GoogleData/steps_2025-05-06.csv", 
-                        "Participant Fitbit data/mc6/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc6/Physical Activity_GoogleData/steps_2025-05-06.csv", 
+                        "../../Participant Fitbit data/mc6/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 mc7_steps_data <- clean("mc7", 
-                        "Participant Fitbit data/mc7/Physical Activity_GoogleData/steps_2025-05-01.csv", 
-                        "Participant Fitbit data/mc7/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc7/Physical Activity_GoogleData/steps_2025-05-01.csv", 
+                        "../../Participant Fitbit data/mc7/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 fc1_steps_data <- clean("fc1", 
-                        "Participant Fitbit data/fc1/Physical Activity_GoogleData/steps_2025-05-06.csv", 
-                        "Participant Fitbit data/fc1/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/fc1/Physical Activity_GoogleData/steps_2025-05-06.csv", 
+                        "../../Participant Fitbit data/fc1/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 fc2_steps_data <- clean("fc2", 
-                        "Participant Fitbit data/fc2/Physical Activity_GoogleData/steps_2025-05-08.csv", 
-                        "Participant Fitbit data/fc2/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/fc2/Physical Activity_GoogleData/steps_2025-05-08.csv", 
+                        "../../Participant Fitbit data/fc2/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 fc3_steps_data <- clean("fc3", 
-                        "Participant Fitbit data/fc3/Physical Activity_GoogleData/steps_2025-05-14.csv", 
-                        "Participant Fitbit data/fc3/Physical Activity_GoogleData/steps_2025-06-01.csv"
+                        "../../Participant Fitbit data/fc3/Physical Activity_GoogleData/steps_2025-05-14.csv", 
+                        "../../Participant Fitbit data/fc3/Physical Activity_GoogleData/steps_2025-06-01.csv"
 )
 
 # 2. Combine participant data ---------------------------------------------
@@ -341,11 +342,11 @@ steps_outliers_z <- participant_summary %>%
 steps_iqr <- IQR(participant_summary$avg_steps, na.rm = TRUE)
 steps_q1 <- quantile(participant_summary$avg_steps, 0.25, na.rm = TRUE)
 steps_q3 <- quantile(participant_summary$avg_steps, 0.75, na.rm = TRUE)
-steps_lower <- q1 - 1.5 * iqr
-steps_upper <- q3 + 1.5 * iqr
+steps_lower <- steps_q1 - 1.5 * steps_iqr
+steps_upper <- steps_q3 + 1.5 * steps_iqr
 
 steps_outliers_iqr <- participant_summary %>%
-  filter(avg_steps < lower | avg_steps > upper) # me2 and me7 
+  filter(avg_steps < steps_lower | avg_steps > steps_upper) # me2 and me7 
 
 
 # Combine outlier ids
@@ -410,6 +411,12 @@ steps_group_wilcox <- wilcox.test(avg_steps ~ group, data = participant_summary_
 
 
 # 9. Compute effect sizes -------------------------------------------------
+# Prepost (added last minute)
+steps_long <- steps_baseline_vs_post %>% pivot_longer(c(baseline, intervention),
+                                                  names_to = "phase", values_to = "avg_steps") %>%
+  mutate(phase = factor(phase, levels = c("baseline", "intervention")))
+steps_prepost_effsize <- rstatix::wilcox_effsize(steps_long, avg_steps ~ phase, paired = TRUE)
+
 
 
 steps_effsize_mw <- rstatix::wilcox_effsize(participant_summary_clean, avg_steps ~ group) # Moderate effect size (d = 0.337)
@@ -526,21 +533,20 @@ steps_results_summary <- tibble::tibble(
     "Outlier(s)",
     "Pre vs Post",
     "Group comparison",
-    "Effect size",
     "Engagement correlation"
   ),
   `Test Used` = c(
     "IQR & Z-score",
     "Wilcoxon signed-rank test",
     "Wilcoxon rank-sum test",
-    "Wilcoxon effect size",
     "Spearman correlation"
   ),
   Result = c(
     "me2, me7",
-    paste0("p = ", signif(steps_prepost_wilcox$p.value, 4), "*"),
-    paste0("p = ", signif(steps_group_wilcox$p.value, 4)),
-    paste0("r = ", signif(steps_effsize_mw$effsize, 3)),
+    paste0("p = ", signif(steps_prepost_wilcox$p.value, 4), "*",
+           ", r = ", signif(steps_prepost_effsize$effsize, 3)),
+    paste0("p = ", signif(steps_group_wilcox$p.value, 4),
+           " r = ", signif(steps_effsize_mw$effsize, 3)),
     paste0("p = ", signif(steps_cor_spearman$p.value, 3), "***",
            ", ρ = ", signif(steps_cor_spearman$estimate, 3))
   ),
@@ -548,7 +554,6 @@ steps_results_summary <- tibble::tibble(
     "Retained",
     "Possible positive association",
     "No significant association",
-    "Moderate effect",
     "Significant positive association"
     
   )
