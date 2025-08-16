@@ -40,104 +40,104 @@ clean <- function(name, may_data, june_data, startdate) {
 # Create table for each participant using the new clean() function
 # Experimental group
 me1_activity_level_data <- clean("me1", 
-                           "Participant Fitbit data/me1/Physical Activity_GoogleData/activity_level_2025-05-04.csv",
-                           "Participant Fitbit data/me1/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/me1/Physical Activity_GoogleData/activity_level_2025-05-04.csv",
+                           "../../Participant Fitbit data/me1/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-05"
 )
 me2_activity_level_data <- clean("me2", 
-                           "Participant Fitbit data/me2/Physical Activity_GoogleData/activity_level_2025-05-04.csv", 
-                           "Participant Fitbit data/me2/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/me2/Physical Activity_GoogleData/activity_level_2025-05-04.csv", 
+                           "../../Participant Fitbit data/me2/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-05"
 )
 me3_activity_level_data <- clean("me3", 
-                           "Participant Fitbit data/me3/Physical Activity_GoogleData/activity_level_2025-05-03.csv", 
-                           "Participant Fitbit data/me3/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/me3/Physical Activity_GoogleData/activity_level_2025-05-03.csv", 
+                           "../../Participant Fitbit data/me3/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-05"
 )
 me4_activity_level_data <- clean("me4", 
-                           "Participant Fitbit data/me4/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
-                           "Participant Fitbit data/me4/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/me4/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
+                           "../../Participant Fitbit data/me4/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-05"
 )
 me5_activity_level_data <- clean("me5", 
-                           "Participant Fitbit data/me5/Physical Activity_GoogleData/activity_level_2025-05-01.csv", 
-                           "Participant Fitbit data/me5/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/me5/Physical Activity_GoogleData/activity_level_2025-05-01.csv", 
+                           "../../Participant Fitbit data/me5/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-05"
 )
 me6_activity_level_data <- clean("me6", 
-                           "Participant Fitbit data/me6/Physical Activity_GoogleData/activity_level_2025-05-03.csv", 
-                           "Participant Fitbit data/me6/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/me6/Physical Activity_GoogleData/activity_level_2025-05-03.csv", 
+                           "../../Participant Fitbit data/me6/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-05"
 )
 me7_activity_level_data <- clean("me7", 
-                           "Participant Fitbit data/me7/Physical Activity_GoogleData/activity_level_2025-05-04.csv",
-                           "Participant Fitbit data/me7/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/me7/Physical Activity_GoogleData/activity_level_2025-05-04.csv",
+                           "../../Participant Fitbit data/me7/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-05"
 )
 fe1_activity_level_data <- clean("fe1", 
-                           "Participant Fitbit data/fe1/Physical Activity_GoogleData/activity_level_2025-05-04.csv", 
-                           "Participant Fitbit data/fe1/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/fe1/Physical Activity_GoogleData/activity_level_2025-05-04.csv", 
+                           "../../Participant Fitbit data/fe1/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-05"
 )
 fe2_activity_level_data <- clean("fe2", 
-                           "Participant Fitbit data/fe2/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
-                           "Participant Fitbit data/fe2/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/fe2/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
+                           "../../Participant Fitbit data/fe2/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-05"
 )
 # fe3_activity_level_data <- clean("fe3", 
-#                            "Participant Fitbit data/fe3/Physical Activity_GoogleData/activity_level_2025-05-07.csv", 
-#                            "Participant Fitbit data/fe3/Physical Activity_GoogleData/activity_level_2025-06-01.csv"
+#                            "../../Participant Fitbit data/fe3/Physical Activity_GoogleData/activity_level_2025-05-07.csv", 
+#                            "../../Participant Fitbit data/fe3/Physical Activity_GoogleData/activity_level_2025-06-01.csv"
 # )
 
 # Control group
 mc1_activity_level_data <- clean("mc1",
-                           "Participant Fitbit data/mc1/activity_level_2025-05-05.csv", 
-                           "Participant Fitbit data/mc1/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/mc1/activity_level_2025-05-05.csv", 
+                           "../../Participant Fitbit data/mc1/activity_level_2025-06-01.csv",
                            "2025-05-06"
 )
 mc2_activity_level_data <- clean("mc2", 
-                           "Participant Fitbit data/mc2/Physical Activity_GoogleData/activity_level_2025-05-01.csv", 
-                           "Participant Fitbit data/mc2/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/mc2/Physical Activity_GoogleData/activity_level_2025-05-01.csv", 
+                           "../../Participant Fitbit data/mc2/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-06"
 )
 mc3_activity_level_data <- clean("mc3", 
-                           "Participant Fitbit data/mc3/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
-                           "Participant Fitbit data/mc3/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/mc3/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
+                           "../../Participant Fitbit data/mc3/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-06"
 )
 mc4_activity_level_data <- clean("mc4", 
-                           "Participant Fitbit data/mc4/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
-                           "Participant Fitbit data/mc4/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/mc4/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
+                           "../../Participant Fitbit data/mc4/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-06"
 )
 mc5_activity_level_data <- clean("mc5", 
-                           "Participant Fitbit data/mc5/Physical Activity_GoogleData/activity_level_2025-05-08.csv", 
-                           "Participant Fitbit data/mc5/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/mc5/Physical Activity_GoogleData/activity_level_2025-05-08.csv", 
+                           "../../Participant Fitbit data/mc5/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-06"
 )
 mc6_activity_level_data <- clean("mc6", 
-                           "Participant Fitbit data/mc6/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
-                           "Participant Fitbit data/mc6/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/mc6/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
+                           "../../Participant Fitbit data/mc6/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-06"
 )
 mc7_activity_level_data <- clean("mc7", 
-                           "Participant Fitbit data/mc7/Physical Activity_GoogleData/activity_level_2025-05-01.csv", 
-                           "Participant Fitbit data/mc7/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/mc7/Physical Activity_GoogleData/activity_level_2025-05-01.csv", 
+                           "../../Participant Fitbit data/mc7/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-06"
 )
 fc1_activity_level_data <- clean("fc1", 
-                           "Participant Fitbit data/fc1/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
-                           "Participant Fitbit data/fc1/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/fc1/Physical Activity_GoogleData/activity_level_2025-05-06.csv", 
+                           "../../Participant Fitbit data/fc1/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-06"
 )
 fc2_activity_level_data <- clean("fc2", 
-                           "Participant Fitbit data/fc2/Physical Activity_GoogleData/activity_level_2025-05-08.csv", 
-                           "Participant Fitbit data/fc2/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/fc2/Physical Activity_GoogleData/activity_level_2025-05-08.csv", 
+                           "../../Participant Fitbit data/fc2/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-06"
 )
 fc3_activity_level_data <- clean("fc3", 
-                           "Participant Fitbit data/fc3/Physical Activity_GoogleData/activity_level_2025-05-14.csv", 
-                           "Participant Fitbit data/fc3/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
+                           "../../Participant Fitbit data/fc3/Physical Activity_GoogleData/activity_level_2025-05-14.csv", 
+                           "../../Participant Fitbit data/fc3/Physical Activity_GoogleData/activity_level_2025-06-01.csv",
                            "2025-05-06"
 )
 
@@ -491,7 +491,44 @@ act_group_wilcox_v <-  wilcox.test(avg_very ~ group, data = participant_summary_
 
 
 # 9. Compute effect sizes -------------------------------------------------
+# Prepost
+# Sedentary
+sed_long <- activity_level_baseline_vs_post %>%
+  select(participant, sedentary_baseline, sedentary_intervention) %>%
+  tidyr::pivot_longer(cols = c(sedentary_baseline, sedentary_intervention),
+                      names_to = "phase", values_to = "avg_sedentary") %>%
+  mutate(phase = factor(phase, levels = c("sedentary_baseline", "sedentary_intervention")))
 
+sed_prepost_effsize <- rstatix::wilcox_effsize(sed_long, avg_sedentary ~ phase, paired = TRUE)
+
+# Lightly active
+light_long <- activity_level_baseline_vs_post %>%
+  select(participant, lightlyactive_baseline, lightlyactive_intervention) %>%
+  tidyr::pivot_longer(cols = c(lightlyactive_baseline, lightlyactive_intervention),
+                      names_to = "phase", values_to = "avg_light") %>%
+  mutate(phase = factor(phase, levels = c("lightlyactive_baseline", "lightlyactive_intervention")))
+
+light_prepost_effsize <- rstatix::wilcox_effsize(light_long, avg_light ~ phase, paired = TRUE)
+
+# Moderately active
+mod_long <- activity_level_baseline_vs_post %>%
+  select(participant, moderatelyactive_baseline, moderatelyactive_intervention) %>%
+  tidyr::pivot_longer(cols = c(moderatelyactive_baseline, moderatelyactive_intervention),
+                      names_to = "phase", values_to = "avg_moderate") %>%
+  mutate(phase = factor(phase, levels = c("moderatelyactive_baseline", "moderatelyactive_intervention")))
+
+mod_prepost_effsize <- rstatix::wilcox_effsize(mod_long, avg_moderate ~ phase, paired = TRUE)
+
+# Very active
+very_long <- activity_level_baseline_vs_post %>%
+  select(participant, veryactive_baseline, veryactive_intervention) %>%
+  tidyr::pivot_longer(cols = c(veryactive_baseline, veryactive_intervention),
+                      names_to = "phase", values_to = "avg_very") %>%
+  mutate(phase = factor(phase, levels = c("veryactive_baseline", "veryactive_intervention")))
+
+very_prepost_effsize <- rstatix::wilcox_effsize(very_long, avg_very ~ phase, paired = TRUE)
+
+# Group
 # Sedentary
 act_group_effsize_mw_sed <- rstatix::wilcox_effsize(participant_summary_clean, avg_sedentary ~ group)
 
@@ -714,150 +751,27 @@ ggsave("activity_level_prepost_thin.png", plot = last_plot(), width = 7, height 
 
 # 12. Results Summary Table -----------------------------------------------
 
-# act_results_summary_with_mc5 <- tibble::tibble(
-#   Analysis = c(
-#     "Sedentary",
-#     "Outlier(s)",
-#     "Pre vs Post",
-#     "Group comparison",
-#     "Effect size",
-#     "Engagement correlation",
-#     
-#     "Lightly Active",
-#     "Pre vs Post",
-#     "Group comparison",
-#     "Effect size",
-#     "Engagement correlation",
-#     
-#     "Moderately Active",
-#     "Pre vs Post",
-#     "Group comparison",
-#     "Effect size",
-#     "Engagement correlation",
-#     
-#     "Very Active",
-#     "Pre vs Post",
-#     "Group comparison",
-#     "Effect size",
-#     "Engagement correlation"
-#   ),
-#   `Test Used` = c(
-#     "",
-#     "IQR & Z-score",
-#     "Wilcoxon signed-rank test",
-#     "Wilcoxon rank-sum test",
-#     "Wilcoxon effect size",
-#     "Spearman correlation",
-#     
-#     "",
-#     "Wilcoxon signed-rank test",
-#     "Wilcoxon rank-sum test",
-#     "Wilcoxon effect size",
-#     "Spearman correlation",
-#     
-#     "",
-#     "Wilcoxon signed-rank test",
-#     "Wilcoxon rank-sum test",
-#     "Wilcoxon effect size",
-#     "Spearman correlation",
-#     
-#     "",
-#     "Wilcoxon signed-rank test",
-#     "Wilcoxon rank-sum test",
-#     "Wilcoxon effect size",
-#     "Spearman correlation"
-#   ),
-#   Result = c(
-#     "",
-#     "mc5, me7",
-#     paste0("p = ", signif(act_prepost_wilcox_sed$p.value, 4)),
-#     paste0("p = ", signif(act_group_wilcox_sed$p.value, 4)),
-#     paste0("r = ", signif(act_group_effsize_mw_sed$effsize, 3)),
-#     paste0("p = ", signif(act_cor_spearman_sed$p.value, 3), "*",
-#            ", ρ = ", signif(act_cor_spearman_sed$estimate, 3)),
-#     
-#     "",
-#     paste0("p = ", signif(act_prepost_wilcox_l$p.value, 4)),
-#     paste0("p = ", signif(act_group_wilcox_l$p.value, 4)),
-#     paste0("r = ", signif(act_group_effsize_mw_l$effsize, 3)),
-#     paste0("p = ", signif(act_cor_spearman_l$p.value, 3),
-#            ", ρ = ", signif(act_cor_spearman_l$estimate, 3)),
-#     
-#     "",
-#     paste0("p = ", signif(act_prepost_wilcox_m$p.value, 4)),
-#     paste0("p = ", signif(act_group_wilcox_m$p.value, 4)),
-#     paste0("r = ", signif(act_group_effsize_mw_m$effsize, 3)),
-#     paste0("p = ", signif(act_cor_spearman_m$p.value, 3), "***",
-#            ", ρ = ", signif(act_cor_spearman_m$estimate, 3)),
-#     
-#     "",
-#     paste0("p = ", signif(act_prepost_wilcox_v$p.value, 4), "**"),
-#     paste0("p = ", signif(act_group_wilcox_v$p.value, 4)),
-#     paste0("r = ", signif(act_group_effsize_mw_v$effsize, 3)),
-#     paste0("p = ", signif(act_cor_spearman_v$p.value, 3), "*",
-#            ", ρ = ", signif(act_cor_spearman_v$estimate, 3))
-#   ),
-#   Interpretation = c(
-#     "",
-#     "mc5 tested, me7 retained",
-#     "No significant association",
-#     "No significant association",
-#     "Small effect",
-#     "Possible negative association",
-#     
-#     "",
-#     "No significant association",
-#     "No significant association",
-#     "Small effect",
-#     "Negligible association",
-#     
-#     "",
-#     "No significant association",
-#     "No significant association",
-#     "Small effect",
-#     "Significant positive association",
-#     
-#     "",
-#     "Significant positive association",
-#     "No significant association",
-#     "Moderate effect",
-#     "Possible positive association"
-#     
-#   )
-# )
-# 
-# # View and save
-# View(act_results_summary_with_mc5)
-# write.table(act_results_summary_with_mc5, pipe("pbcopy"), sep = "\t", row.names = FALSE, quote = FALSE)
-# write_csv(act_results_summary_with_mc5, "activity_level_results_summary_with_mc5.csv")
-
-
-# Second analysis without mc5 (commented out data import)
 act_results_summary <- tibble::tibble(
   Analysis = c(
     "Sedentary",
     "Outlier(s)",
     "Pre vs Post",
     "Group comparison",
-    "Effect size",
     "Engagement correlation",
     
     "Lightly Active",
     "Pre vs Post",
     "Group comparison",
-    "Effect size",
     "Engagement correlation",
     
     "Moderately Active",
     "Pre vs Post",
     "Group comparison",
-    "Effect size",
     "Engagement correlation",
     
     "Very Active",
     "Pre vs Post",
     "Group comparison",
-    "Effect size",
     "Engagement correlation"
   ),
   `Test Used` = c(
@@ -865,54 +779,54 @@ act_results_summary <- tibble::tibble(
     "IQR & Z-score",
     "Wilcoxon signed-rank test",
     "Wilcoxon rank-sum test",
-    "Wilcoxon effect size",
     "Spearman correlation",
     
     "",
     "Wilcoxon signed-rank test",
     "Wilcoxon rank-sum test",
-    "Wilcoxon effect size",
     "Spearman correlation",
     
     "",
     "Wilcoxon signed-rank test",
     "Wilcoxon rank-sum test",
-    "Wilcoxon effect size",
     "Spearman correlation",
     
     "",
     "Wilcoxon signed-rank test",
     "Wilcoxon rank-sum test",
-    "Wilcoxon effect size",
     "Spearman correlation"
   ),
   Result = c(
     "",
     "mc5, me7",
-    paste0("p = ", signif(act_prepost_wilcox_sed$p.value, 4)),
-    paste0("p = ", signif(act_group_wilcox_sed$p.value, 4)),
-    paste0("r = ", signif(act_group_effsize_mw_sed$effsize, 3)),
+    paste0("p = ", signif(act_prepost_wilcox_sed$p.value, 4),
+           ", r = ", signif(sed_prepost_effsize$effsize, 3)),
+    paste0("p = ", signif(act_group_wilcox_sed$p.value, 4),
+           ", r = ", signif(act_group_effsize_mw_sed$effsize, 3)),
     paste0("p = ", signif(act_cor_spearman_sed$p.value, 3), "*",
            ", ρ = ", signif(act_cor_spearman_sed$estimate, 3)),
     
     "",
-    paste0("p = ", signif(act_prepost_wilcox_l$p.value, 4)),
-    paste0("p = ", signif(act_group_wilcox_l$p.value, 4)),
-    paste0("r = ", signif(act_group_effsize_mw_l$effsize, 3)),
+    paste0("p = ", signif(act_prepost_wilcox_l$p.value, 4),
+           ", r = ", signif(light_prepost_effsize$effsize, 3)),
+    paste0("p = ", signif(act_group_wilcox_l$p.value, 4),
+           ", r = ", signif(act_group_effsize_mw_l$effsize, 3)),
     paste0("p = ", signif(act_cor_spearman_l$p.value, 3),
            ", ρ = ", signif(act_cor_spearman_l$estimate, 3)),
     
     "",
-    paste0("p = ", signif(act_prepost_wilcox_m$p.value, 4)),
-    paste0("p = ", signif(act_group_wilcox_m$p.value, 4)),
-    paste0("r = ", signif(act_group_effsize_mw_m$effsize, 3)),
+    paste0("p = ", signif(act_prepost_wilcox_m$p.value, 4),
+           ", r = ", signif(mod_prepost_effsize$effsize, 3)),
+    paste0("p = ", signif(act_group_wilcox_m$p.value, 4),
+           ", r = ", signif(act_group_effsize_mw_m$effsize, 3)),
     paste0("p = ", signif(act_cor_spearman_m$p.value, 3), "***",
            ", ρ = ", signif(act_cor_spearman_m$estimate, 3)),
     
     "",
-    paste0("p = ", signif(act_prepost_wilcox_v$p.value, 4), "**"),
-    paste0("p = ", signif(act_group_wilcox_v$p.value, 4)),
-    paste0("r = ", signif(act_group_effsize_mw_v$effsize, 3)),
+    paste0("p = ", signif(act_prepost_wilcox_v$p.value, 4), "**",
+           ", r = ", signif(very_prepost_effsize$effsize, 3)),
+    paste0("p = ", signif(act_group_wilcox_v$p.value, 4),
+           ", r = ", signif(act_group_effsize_mw_v$effsize, 3)),
     paste0("p = ", signif(act_cor_spearman_v$p.value, 3), "*",
            ", ρ = ", signif(act_cor_spearman_v$estimate, 3))
   ),
@@ -921,25 +835,21 @@ act_results_summary <- tibble::tibble(
     "mc5 removed, me7 retained",
     "No significant association",
     "No significant association",
-    "Small effect",
     "Possible negative association",
     
     "",
     "No significant association",
     "No significant association",
-    "Small effect",
     "Negligible association",
     
     "",
     "No significant association",
     "No significant association",
-    "Small effect",
     "Significant positive association",
     
     "",
     "Significant positive association",
     "No significant association",
-    "Moderate effect",
     "Possible positive association"
     
   )
