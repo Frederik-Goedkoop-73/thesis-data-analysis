@@ -5,6 +5,7 @@ library(ggthemes)
 library(lubridate)
 library(rstatix)
 library(scales)
+library(tidyr)
 
 
 # 1. Import and clean data ------------------------------------------------
@@ -40,86 +41,86 @@ clean <- function(name, may_data, june_data) {
 # Create table for each participant using the new clean() function
 # Experimental group
 me1_calories_data <- clean("me1", 
-                        "Participant Fitbit data/me1/Physical Activity_GoogleData/calories_2025-05-04.csv",
-                        "Participant Fitbit data/me1/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/me1/Physical Activity_GoogleData/calories_2025-05-04.csv",
+                        "../../Participant Fitbit data/me1/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 me2_calories_data <- clean("me2", 
-                        "Participant Fitbit data/me2/Physical Activity_GoogleData/calories_2025-05-04.csv", 
-                        "Participant Fitbit data/me2/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/me2/Physical Activity_GoogleData/calories_2025-05-04.csv", 
+                        "../../Participant Fitbit data/me2/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 me3_calories_data <- clean("me3", 
-                        "Participant Fitbit data/me3/Physical Activity_GoogleData/calories_2025-05-03.csv", 
-                        "Participant Fitbit data/me3/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/me3/Physical Activity_GoogleData/calories_2025-05-03.csv", 
+                        "../../Participant Fitbit data/me3/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 me4_calories_data <- clean("me4", 
-                        "Participant Fitbit data/me4/Physical Activity_GoogleData/calories_2025-05-06.csv", 
-                        "Participant Fitbit data/me4/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/me4/Physical Activity_GoogleData/calories_2025-05-06.csv", 
+                        "../../Participant Fitbit data/me4/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 me5_calories_data <- clean("me5", 
-                        "Participant Fitbit data/me5/Physical Activity_GoogleData/calories_2025-05-01.csv", 
-                        "Participant Fitbit data/me5/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/me5/Physical Activity_GoogleData/calories_2025-05-01.csv", 
+                        "../../Participant Fitbit data/me5/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 me6_calories_data <- clean("me6", 
-                        "Participant Fitbit data/me6/Physical Activity_GoogleData/calories_2025-05-03.csv", 
-                        "Participant Fitbit data/me6/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/me6/Physical Activity_GoogleData/calories_2025-05-03.csv", 
+                        "../../Participant Fitbit data/me6/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 me7_calories_data <- clean("me7", 
-                        "Participant Fitbit data/me7/Physical Activity_GoogleData/calories_2025-05-04.csv",
-                        "Participant Fitbit data/me7/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/me7/Physical Activity_GoogleData/calories_2025-05-04.csv",
+                        "../../Participant Fitbit data/me7/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 fe1_calories_data <- clean("fe1", 
-                        "Participant Fitbit data/fe1/Physical Activity_GoogleData/calories_2025-05-04.csv", 
-                        "Participant Fitbit data/fe1/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/fe1/Physical Activity_GoogleData/calories_2025-05-04.csv", 
+                        "../../Participant Fitbit data/fe1/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 fe2_calories_data <- clean("fe2", 
-                        "Participant Fitbit data/fe2/Physical Activity_GoogleData/calories_2025-05-06.csv", 
-                        "Participant Fitbit data/fe2/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/fe2/Physical Activity_GoogleData/calories_2025-05-06.csv", 
+                        "../../Participant Fitbit data/fe2/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 # fe3_calories_data <- clean("fe3", 
-#                         "Participant Fitbit data/fe3/Physical Activity_GoogleData/calories_2025-05-07.csv", 
-#                         "Participant Fitbit data/fe3/Physical Activity_GoogleData/calories_2025-06-01.csv"
+#                         "../../Participant Fitbit data/fe3/Physical Activity_GoogleData/calories_2025-05-07.csv", 
+#                         "../../Participant Fitbit data/fe3/Physical Activity_GoogleData/calories_2025-06-01.csv"
 # )
 
 # Control group
 mc1_calories_data <- clean("mc1",
-                        "Participant Fitbit data/mc1/calories_2025-05-05.csv", 
-                        "Participant Fitbit data/mc1/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc1/calories_2025-05-05.csv", 
+                        "../../Participant Fitbit data/mc1/calories_2025-06-01.csv"
 )
 mc2_calories_data <- clean("mc2", 
-                        "Participant Fitbit data/mc2/Physical Activity_GoogleData/calories_2025-05-01.csv", 
-                        "Participant Fitbit data/mc2/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc2/Physical Activity_GoogleData/calories_2025-05-01.csv", 
+                        "../../Participant Fitbit data/mc2/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 mc3_calories_data <- clean("mc3", 
-                        "Participant Fitbit data/mc3/Physical Activity_GoogleData/calories_2025-05-06.csv", 
-                        "Participant Fitbit data/mc3/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc3/Physical Activity_GoogleData/calories_2025-05-06.csv", 
+                        "../../Participant Fitbit data/mc3/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 mc4_calories_data <- clean("mc4", 
-                        "Participant Fitbit data/mc4/Physical Activity_GoogleData/calories_2025-05-06.csv", 
-                        "Participant Fitbit data/mc4/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc4/Physical Activity_GoogleData/calories_2025-05-06.csv", 
+                        "../../Participant Fitbit data/mc4/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 mc5_calories_data <- clean("mc5", 
-                        "Participant Fitbit data/mc5/Physical Activity_GoogleData/calories_2025-05-08.csv", 
-                        "Participant Fitbit data/mc5/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc5/Physical Activity_GoogleData/calories_2025-05-08.csv", 
+                        "../../Participant Fitbit data/mc5/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 mc6_calories_data <- clean("mc6", 
-                        "Participant Fitbit data/mc6/Physical Activity_GoogleData/calories_2025-05-06.csv", 
-                        "Participant Fitbit data/mc6/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc6/Physical Activity_GoogleData/calories_2025-05-06.csv", 
+                        "../../Participant Fitbit data/mc6/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 mc7_calories_data <- clean("mc7", 
-                        "Participant Fitbit data/mc7/Physical Activity_GoogleData/calories_2025-05-01.csv", 
-                        "Participant Fitbit data/mc7/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/mc7/Physical Activity_GoogleData/calories_2025-05-01.csv", 
+                        "../../Participant Fitbit data/mc7/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 fc1_calories_data <- clean("fc1", 
-                        "Participant Fitbit data/fc1/Physical Activity_GoogleData/calories_2025-05-06.csv", 
-                        "Participant Fitbit data/fc1/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/fc1/Physical Activity_GoogleData/calories_2025-05-06.csv", 
+                        "../../Participant Fitbit data/fc1/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 fc2_calories_data <- clean("fc2", 
-                        "Participant Fitbit data/fc2/Physical Activity_GoogleData/calories_2025-05-08.csv", 
-                        "Participant Fitbit data/fc2/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/fc2/Physical Activity_GoogleData/calories_2025-05-08.csv", 
+                        "../../Participant Fitbit data/fc2/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 fc3_calories_data <- clean("fc3",
-                        "Participant Fitbit data/fc3/Physical Activity_GoogleData/calories_2025-05-14.csv",
-                        "Participant Fitbit data/fc3/Physical Activity_GoogleData/calories_2025-06-01.csv"
+                        "../../Participant Fitbit data/fc3/Physical Activity_GoogleData/calories_2025-05-14.csv",
+                        "../../Participant Fitbit data/fc3/Physical Activity_GoogleData/calories_2025-06-01.csv"
 )
 
 
@@ -355,11 +356,11 @@ calories_outliers_z <- participant_summary %>% # z limit of 2 used since this is
 iqr <- IQR(participant_summary$avg_calories, na.rm = TRUE)
 q1 <- quantile(participant_summary$avg_calories, 0.25, na.rm = TRUE)
 q3 <- quantile(participant_summary$avg_calories, 0.75, na.rm = TRUE)
-lower <- q1 - 1.5 * iqr
-upper <- q3 + 1.5 * iqr
+calories_lower <- calories_q1 - 1.5 * calories_iqr
+calories_upper <- calories_q3 + 1.5 * calories_iqr
 
 calories_outliers_iqr <- participant_summary %>%
-  filter(avg_calories < lower | avg_calories > upper) # None
+  filter(avg_calories < calories_lower | avg_calories > calories_upper) # None
 
 
 # Combine outlier ids
@@ -418,7 +419,13 @@ calories_group_wilcox <- wilcox.test(avg_calories ~ group, data = participant_su
 
 
 # 9. Compute effect sizes -------------------------------------------------
+# Prepost (added last minute)
+calories_long <- calories_baseline_vs_post %>% pivot_longer(c(baseline, intervention),
+                                                            names_to = "phase", values_to = "avg_calories") %>%
+  mutate(phase = factor(phase, levels = c("baseline", "intervention")))
+calories_prepost_effsize <- rstatix::wilcox_effsize(calories_long, avg_calories ~ phase, paired = TRUE)
 
+# Group
 calories_effsize_mw <- rstatix::wilcox_effsize(participant_summary_clean, avg_calories ~ group) # Small effect size (d = 0.287)
 
 
@@ -533,21 +540,20 @@ calories_results_summary <- tibble::tibble(
     "Outlier(s)",
     "Pre vs Post",
     "Group comparison",
-    "Effect size",
     "Engagement correlation"
   ),
   `Test Used` = c(
     "IQR & Z-score",
     "Wilcoxon signed-rank test",
     "Wilcoxon rank-sum test",
-    "Wilcoxon effect size",
     "Spearman correlation"
   ),
   Result = c(
     "None",
-    paste0("p = ", signif(calories_prepost_wilcox$p.value, 4), "*"),
-    paste0("p = ", signif(calories_group_wilcox$p.value, 4), "*"),
-    paste0("r = ", signif(calories_effsize_mw$effsize, 3)),
+    paste0("p = ", signif(calories_prepost_wilcox$p.value, 4), "*",
+           ", r = ", signif(calories_prepost_effsize$effsize, 3)),
+    paste0("p = ", signif(calories_group_wilcox$p.value, 4), "*",
+           ", r = ", signif(calories_effsize_mw$effsize, 3)),
     paste0("p = ", signif(calories_cor_spearman$p.value, 3), "**",
            ", ρ = ", signif(calories_cor_spearman$estimate, 3))
   ),
@@ -555,7 +561,6 @@ calories_results_summary <- tibble::tibble(
     "",
     "Possible positive association",
     "Possible positive association",
-    "Moderate effect",
     "Significant positive association"
     
   )
