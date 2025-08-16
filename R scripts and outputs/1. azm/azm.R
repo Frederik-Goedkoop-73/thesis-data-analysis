@@ -4,6 +4,7 @@ library(ggplot2)
 library(ggthemes)
 library(lubridate)
 library(rstatix)
+library(tidyr)
 
 
 # 1. Import and clean data ------------------------------------------------
@@ -39,87 +40,87 @@ clean <- function(name, may_data, june_data) {
 # Create table for each participant using the new clean() function
   # Experimental group
 me1_azm_data <- clean("me1", 
-                "Participant Fitbit data/me1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-04.csv", 
-                "Participant Fitbit data/me1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/me1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-04.csv", 
+                "../../Participant Fitbit data/me1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 me2_azm_data <- clean("me2", 
-                "Participant Fitbit data/me2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-04.csv", 
-                "Participant Fitbit data/me2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/me2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-04.csv", 
+                "../../Participant Fitbit data/me2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 me3_azm_data <- clean("me3", 
-                "Participant Fitbit data/me3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-03.csv", 
-                "Participant Fitbit data/me3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/me3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-03.csv", 
+                "../../Participant Fitbit data/me3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 me4_azm_data <- clean("me4", 
-                "Participant Fitbit data/me4/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
-                "Participant Fitbit data/me4/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/me4/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
+                "../../Participant Fitbit data/me4/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 me5_azm_data <- clean("me5", 
-                "Participant Fitbit data/me5/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-01.csv", 
-                "Participant Fitbit data/me5/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/me5/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-01.csv", 
+                "../../Participant Fitbit data/me5/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 me6_azm_data <- clean("me6", 
-                "Participant Fitbit data/me6/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-03.csv", 
-                "Participant Fitbit data/me6/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/me6/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-03.csv", 
+                "../../Participant Fitbit data/me6/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 me7_azm_data <- clean("me7", 
-                "Participant Fitbit data/me7/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-04.csv", 
-                "Participant Fitbit data/me7/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/me7/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-04.csv", 
+                "../../Participant Fitbit data/me7/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 fe1_azm_data <- clean("fe1", 
-                "Participant Fitbit data/fe1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-04.csv", 
-                "Participant Fitbit data/fe1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/fe1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-04.csv", 
+                "../../Participant Fitbit data/fe1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 fe2_azm_data <- clean("fe2", 
-                "Participant Fitbit data/fe2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
-                "Participant Fitbit data/fe2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/fe2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
+                "../../Participant Fitbit data/fe2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 # Omit due to low engagement
 # fe3_azm_data <- clean("fe3", 
-#                 "Participant Fitbit data/fe3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-07.csv", 
-#                 "Participant Fitbit data/fe3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+#                 "../../Participant Fitbit data/fe3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-07.csv", 
+#                 "../../Participant Fitbit data/fe3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 # )
 
   # Control group
 mc1_azm_data <- clean("mc1", 
-                "Participant Fitbit data/mc1/Active Zone Minutes - 2025-05-05.csv", 
-                "Participant Fitbit data/mc1/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/mc1/Active Zone Minutes - 2025-05-05.csv", 
+                "../../Participant Fitbit data/mc1/Active Zone Minutes - 2025-06-01.csv"
 )
 mc2_azm_data <- clean("mc2", 
-                "Participant Fitbit data/mc2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-01.csv", 
-                "Participant Fitbit data/mc2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/mc2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-01.csv", 
+                "../../Participant Fitbit data/mc2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 mc3_azm_data <- clean("mc3", 
-                "Participant Fitbit data/mc3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
-                "Participant Fitbit data/mc3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/mc3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
+                "../../Participant Fitbit data/mc3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 mc4_azm_data <- clean("mc4", 
-                "Participant Fitbit data/mc4/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
-                "Participant Fitbit data/mc4/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/mc4/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
+                "../../Participant Fitbit data/mc4/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 mc5_azm_data <- clean("mc5", 
-                "Participant Fitbit data/mc5/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-08.csv", 
-                "Participant Fitbit data/mc5/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/mc5/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-08.csv", 
+                "../../Participant Fitbit data/mc5/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 mc6_azm_data <- clean("mc6", 
-                "Participant Fitbit data/mc6/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
-                "Participant Fitbit data/mc6/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/mc6/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
+                "../../Participant Fitbit data/mc6/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 mc7_azm_data <- clean("mc7", 
-                "Participant Fitbit data/mc7/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-01.csv", 
-                "Participant Fitbit data/mc7/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/mc7/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-01.csv", 
+                "../../Participant Fitbit data/mc7/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 fc1_azm_data <- clean("fc1", 
-                "Participant Fitbit data/fc1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
-                "Participant Fitbit data/fc1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/fc1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-06.csv", 
+                "../../Participant Fitbit data/fc1/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 fc2_azm_data <- clean("fc2", 
-                "Participant Fitbit data/fc2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-08.csv", 
-                "Participant Fitbit data/fc2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/fc2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-08.csv", 
+                "../../Participant Fitbit data/fc2/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 fc3_azm_data <- clean("fc3", 
-                "Participant Fitbit data/fc3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-14.csv", 
-                "Participant Fitbit data/fc3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
+                "../../Participant Fitbit data/fc3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-05-14.csv", 
+                "../../Participant Fitbit data/fc3/Active Zone Minutes (AZM)/Active Zone Minutes - 2025-06-01.csv"
 )
 
 
@@ -335,11 +336,11 @@ print(c(Experimental = azm_shapiro_exp$p.value,
 azm_iqr <- IQR(participant_summary$avg_azm, na.rm = TRUE)
 azm_q1 <- quantile(participant_summary$avg_azm, 0.25, na.rm = TRUE)
 azm_q3 <- quantile(participant_summary$avg_azm, 0.75, na.rm = TRUE)
-azm_lower <- q1 - 1.5 * iqr
-azm_upper <- q3 + 1.5 * iqr
+azm_lower <- azm_q1 - 1.5 * azm_iqr
+azm_upper <- azm_q3 + 1.5 * azm_iqr
 
 azm_outliers_iqr <- participant_summary %>%
-  filter(avg_azm < lower | avg_azm > upper)
+  filter(avg_azm < azm_lower | avg_azm > azm_upper)
 
 # Outlier removal: Z-score method (for robustness)
 participant_summary <- participant_summary %>%
@@ -408,6 +409,14 @@ azm_group_wilcox <- wilcox.test(avg_azm ~ group, data = participant_summary_clea
 # Mann-Whitney effect size (r = Z / sqrt(n))
 # You’ll need to extract Z manually if using wilcox.test()
 
+# Prepost (added last minute addition)
+azm_long <- azm_baseline_vs_post %>% pivot_longer(c(baseline, intervention),
+                                                  names_to = "phase", values_to = "avg_azm") %>%
+  mutate(phase = factor(phase, levels = c("baseline", "intervention")))
+azm_prepost_effsize <- rstatix::wilcox_effsize(azm_long, avg_azm ~ phase, paired = TRUE)
+
+
+# Group
 azm_effsize_mw <- participant_summary_clean %>%
   rstatix::wilcox_effsize(avg_azm ~ group) # Small effect size (r = 0.356)
 # The effect size (r = 0.30) indicates a small difference in AZM between groups, favoring the gamified condition.
@@ -525,21 +534,20 @@ azm_results_summary <- tibble::tibble(
     "Outlier(s)",
     "Pre vs Post",
     "Group comparison",
-    "Effect size",
     "Engagement correlation"
   ),
   `Test Used` = c(
     "IQR & Z-score",
     "Wilcoxon signed-rank test",
     "Wilcoxon rank-sum test",
-    "Wilcoxon effect size",
     "Spearman correlation"
   ),
   Result = c(
     "mc7",
-    paste0("p = ", signif(azm_prepost_wilcox$p.value, 4)),
-    paste0("p = ", signif(azm_group_wilcox$p.value, 4)),
-    paste0("r = ", signif(azm_effsize_mw$effsize, 3)),
+    paste0("p = ", signif(azm_prepost_wilcox$p.value, 4),
+           ", r = ", signif(azm_prepost_effsize$effsize, 3)),
+    paste0("p = ", signif(azm_group_wilcox$p.value, 4),
+           ", r = ", signif(azm_effsize_mw$effsize, 3)),
     paste0("p = ", signif(azm_cor_spearman$p.value, 3), "*",
            ", ρ = ", signif(azm_cor_spearman$estimate, 3))
   ),
@@ -547,7 +555,6 @@ azm_results_summary <- tibble::tibble(
     "Removed",
     "No significant association",
     "No significant association",
-    "Moderate effect",
     "Possible positive association"
   )
 )

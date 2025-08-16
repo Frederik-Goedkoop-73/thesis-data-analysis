@@ -1,6 +1,5 @@
 Analysis,Test Used,Result,Interpretation
 Outlier(s),IQR & Z-score,mc7,Removed
-Pre vs Post,Wilcoxon signed-rank test,p = 0.1641,No significant association
-Group comparison,Wilcoxon rank-sum test,p = 0.1135,No significant association
-Effect size,Wilcoxon effect size,r = 0.385,Moderate effect
+Pre vs Post,Wilcoxon signed-rank test,p = 0.1641r = 0.494,No significant association
+Group comparison,Wilcoxon rank-sum test,p = 0.1135r = 0.385,No significant association
 Engagement correlation,Spearman correlation,"p = 0.0589*, ρ = 0.667",Possible positive association
